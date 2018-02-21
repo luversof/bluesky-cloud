@@ -6,7 +6,7 @@
 		<artifactId>bluesky-cloud-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>bluesky-cloud-netflix-hystrix-dashboard</artifactId>
+	<artifactId>bluesky-cloud-netflix-turbine</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -14,7 +14,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+			<artifactId>spring-cloud-starter-netflix-turbine</artifactId>
 		</dependency>
 	</dependencies>
 </project>

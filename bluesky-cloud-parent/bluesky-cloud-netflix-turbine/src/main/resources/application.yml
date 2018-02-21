@@ -1,0 +1,13 @@
+server:
+  port: 8990
+spring:
+  application:
+    name: bluesky-cloud-netflix-hystrix-turbine
+    
+turbine:
+  # turbine-core 라이브러리엔 spring actuator 변경 부분이 반영되지 않은 상태임 (InstanceMonitor url 변수 설정 참고)
+  instanceUrlSuffix: actuator/hystrix.stream
+  aggregator:
+    clusterConfig: BLUESKY-WEB-DEFAULT
+  app-config: bluesky-web-default
+  
