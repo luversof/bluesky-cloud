@@ -15,6 +15,7 @@
 		<module>bluesky-cloud-netflix-eureka-server</module>
 		<module>bluesky-cloud-netflix-hystrix-dashboard</module>
 		<module>bluesky-cloud-netflix-turbine</module>
+		<module>bluesky-cloud-netflix-zuul</module>
 	</modules>
 
 	<dependencies>

@@ -1,0 +1,6 @@
+server:
+  port: 8991
+spring:
+  application:
+    name: bluesky-cloud-netflix-zuul
+    
