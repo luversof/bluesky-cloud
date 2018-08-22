@@ -54,7 +54,7 @@
 
 	<profiles>
 		<profile>
-			<id>localdev</id>
+			<id>dockerdev</id>
 			<repositories>
 				<repository>
 					<id>bluesky-local-nexus</id>
