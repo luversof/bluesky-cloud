@@ -19,7 +19,7 @@
 		<module>bluesky-cloud-netflix-zuul</module>
 	</modules>
 	<properties>
-		<docker.image.prefix>springio</docker.image.prefix>
+		<docker.image.prefix>luversof</docker.image.prefix>
 	</properties>
 	<build>
 		<pluginManagement>
