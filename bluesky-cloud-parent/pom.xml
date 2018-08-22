@@ -57,7 +57,7 @@
 			<id>dockerdev</id>
 			<repositories>
 				<repository>
-					<id>bluesky-local-nexus</id>
+					<id>bluesky-docker-nexus</id>
 					<url>http://nexus:8081/repository/maven-public/</url>
 					<releases>
 						<enabled>true</enabled>
