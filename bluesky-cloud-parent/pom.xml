@@ -94,6 +94,14 @@
 			<url>http://repo.spring.io/milestone</url>
 		</repository>
 		<repository>
+			<id>bluesky-snapshots</id>
+			<url>http://nexus:8081/repository/maven-snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
 			<id>github-bluesky-maven-repo</id>
 			<url>https://raw.githubusercontent.com/luversof/bluesky-maven-repo/master/snapshots</url>
 			<snapshots>
