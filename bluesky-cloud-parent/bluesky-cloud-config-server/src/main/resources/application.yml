@@ -5,7 +5,6 @@ spring:
     name: bluesky-cloud-config-server
   cloud:
     config:
-      enabled: false
       server:
         git:
           uri: https://github.com/luversof/bluesky-config-repo

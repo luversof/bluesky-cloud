@@ -4,3 +4,5 @@ encrypt:
     password: blueskyStorePass
     alias: bluesky-Project
     secret: blueskyKeyPass
+
+spring:  cloud:    config:      discovery:        enabled: false
