@@ -5,4 +5,4 @@ encrypt:
     alias: bluesky-Project
     secret: blueskyKeyPass
 
-spring:  cloud:    config:      discovery:        enabled: false
+spring:  cloud:    config:      enabled: false
