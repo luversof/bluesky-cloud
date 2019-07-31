@@ -1,0 +1,3 @@
+docker build --build-arg JAR_FILE=bluesky-cloud-parent/bluesky-cloud-netflix-eureka-server/target/bluesky-cloud-netflix-eureka-server-0.0.1-SNAPSHOT.jar --tag luversof/bluesky-cloud-netflix-eureka-server .
+docker build --build-arg JAR_FILE=bluesky-cloud-parent/bluesky-cloud-config-server/target/bluesky-cloud-config-server-0.0.1-SNAPSHOT.jar --tag luversof/bluesky-cloud-config-server .
+docker build --build-arg JAR_FILE=bluesky-cloud-parent/bluesky-cloud-admin-server/target/bluesky-cloud-admin-server-0.0.1-SNAPSHOT.jar --tag luversof/bluesky-cloud-admin-server .
