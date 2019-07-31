@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<bluesky-cloud-config-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "net.luversof.cloud.config.server.Application",
+      "projectName": "bluesky-cloud-config-server",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<bluesky-cloud-netflix-eureka-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "net.luversof.cloud.netflix.eureka.server.Application",
+      "projectName": "bluesky-cloud-netflix-eureka-server",
+      "args": ""
+    }
+  ]
+}
