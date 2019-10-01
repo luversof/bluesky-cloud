@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  netflix-eureka-server:
+    image: luversof/bluesky-cloud-netflix-eureka-server
+    ports:
+      - '8761:8761'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dockerdev
+
+  config-server:
+    image: luversof/bluesky-cloud-config-server
+    ports:
+      - '8888:8888'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dockerdev
+    depends_on:
+      - netflix-eureka-server
+      
+  admin-server:
+    image: luversof/bluesky-cloud-admin-server
+    ports:
+      - '8889:8889'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dockerdev
+    depends_on:
+      - netflix-eureka-server
