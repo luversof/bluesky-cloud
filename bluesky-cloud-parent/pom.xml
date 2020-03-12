@@ -4,7 +4,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.luversof.cloud</groupId>
 	<artifactId>bluesky-cloud-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<parent>
 		<groupId>net.luversof.boot</groupId>
@@ -82,6 +81,14 @@
 	</profiles>
 	<repositories>
 		<repository>
+			<id>bluesky-snapshots</id>
+			<url>http://nexus:8081/repository/maven-snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
 			<id>spring-snapshots</id>
 			<url>http://repo.spring.io/snapshot</url>
 			<snapshots>
@@ -91,14 +98,6 @@
 		<repository>
 			<id>spring-milestones</id>
 			<url>http://repo.spring.io/milestone</url>
-		</repository>
-		<repository>
-			<id>bluesky-snapshots</id>
-			<url>http://nexus:8081/repository/maven-snapshots/</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
 		</repository>
 		<repository>
 			<id>github-bluesky-maven-repo</id>
