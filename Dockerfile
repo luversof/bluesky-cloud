@@ -1,5 +1,5 @@
 FROM busybox
 
 ARG JAR_FILE
-ADD ${JAR_FILE} app.jar
+ADD ${JAR_FILE} /test/app.jar
 CMD "tail" "-f" "/dev/null"
