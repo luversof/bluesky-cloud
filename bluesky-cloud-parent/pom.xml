@@ -53,6 +53,32 @@
 
 	<profiles>
 		<profile>
+			<id>nexus-local</id>
+			<repositories>
+				<repository>
+					<id>bluesky-nexus-docker</id>
+					<url>http://localhost:8082/repository/maven-public/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>always</updatePolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+			<distributionManagement>
+				<repository>
+					<id>bluesky-releases</id>
+					<url>http://localhost:8082/repository/maven-releases/</url>
+				</repository>
+				<snapshotRepository>
+					<id>bluesky-snapshots</id>
+					<url>http://localhost:8082/repository/maven-snapshots/</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+		<profile>
 			<id>nexus-docker</id>
 			<repositories>
 				<repository>
@@ -108,7 +134,7 @@
 	<repositories>
 		<repository>
 			<id>bluesky-snapshots</id>
-			<url>http://nexus:8081/repository/maven-snapshots/</url>
+			<url>http://nexus:8082/repository/maven-snapshots/</url>
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>

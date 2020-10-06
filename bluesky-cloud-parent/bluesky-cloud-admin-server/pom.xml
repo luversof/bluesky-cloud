@@ -31,6 +31,11 @@
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
+				<configuration>
+					<to>
+						<image>luversof/bluesky-cloud-admin-server</image>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
