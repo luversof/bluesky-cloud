@@ -1,5 +1,0 @@
-server:
-  port: 8990
-spring:
-  application:
-    name: bluesky-cloud-netflix-hystrix-turbine

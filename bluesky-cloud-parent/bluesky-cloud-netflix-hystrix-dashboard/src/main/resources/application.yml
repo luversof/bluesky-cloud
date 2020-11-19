@@ -1,5 +1,0 @@
-server:
-  port: 8989
-spring:
-  application:
-    name: bluesky-cloud-netflix-hystrix-dashboard
