@@ -1,6 +1,7 @@
 server:
   port: 8888
 spring:
+  config.import: classpath:/config/bootstrap.yml
   application:
     name: bluesky-cloud-config-server
   cloud:
@@ -11,3 +12,5 @@ spring:
           default-label: develop
     bus:
       enabled: false
+
+debug: true

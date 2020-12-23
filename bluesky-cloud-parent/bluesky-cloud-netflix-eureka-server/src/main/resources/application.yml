@@ -1,6 +1,7 @@
 server:
   port: 8761
 spring:
+  config.import: classpath:/config/bootstrap.yml
   application:
     name: bluesky-cloud-netflix-eureka-server
 

@@ -1,8 +1,9 @@
 encrypt:
   keyStore:
     location: classpath:/bluesky.jks
-    password: blueskyStorePass
+    password: blueskyPass
     alias: bluesky-Project
-    secret: blueskyKeyPass
+    secret: blueskyPass
 
-spring:  cloud:    config:      enabled: false
+spring:
+  cloud:    config:      enabled: false

@@ -1,5 +1,6 @@
 server:
   port: 8889
 spring:
+  config.import: classpath:/config/bootstrap.yml
   application:
     name: bluesky-cloud-admin-server
