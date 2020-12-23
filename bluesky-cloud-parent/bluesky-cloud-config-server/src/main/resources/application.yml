@@ -1,11 +1,12 @@
 server:
   port: 8888
+
 spring:
   config.import: classpath:/config/bootstrap.yml
-  application:
-    name: bluesky-cloud-config-server
+  application.name: bluesky-cloud-config-server
   cloud:
     config:
+      enabled: false
       server:
         git:
           uri: https://github.com/luversof/bluesky-config-repo
@@ -14,3 +15,12 @@ spring:
       enabled: false
 
 debug: true
+
+
+encrypt:
+  keyStore:
+    location: classpath:/bluesky.jks
+    password: blueskyPass
+    alias: bluesky-Project
+    secret: blueskyPass
+
