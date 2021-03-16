@@ -131,7 +131,7 @@
 	<repositories>
 		<repository>
 			<id>bluesky-snapshots</id>
-			<url>http://nexus:8082/repository/maven-snapshots/</url>
+			<url>http://nexus-service:8082/repository/maven-snapshots/</url>
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
