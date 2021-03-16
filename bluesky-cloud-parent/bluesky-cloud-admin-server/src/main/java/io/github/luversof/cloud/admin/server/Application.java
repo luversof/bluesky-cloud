@@ -1,4 +1,4 @@
-package net.luversof.cloud.admin.server;
+package io.github.luversof.cloud.admin.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
