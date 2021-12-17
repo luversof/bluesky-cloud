@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bluesky-cloud-admin-server-deployment
+  labels:
+    app: bluesky-cloud-admin-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bluesky-cloud-admin-server
+  template:
+    metadata:
+      labels:
+        app: bluesky-cloud-admin-server
+    spec:
+#      hostname: admin-server
+      containers:
+      - name: bluesky-cloud-admin-server
+#        image: luversof/bluesky-cloud-admin-server:latest
+        image: localhost:8083/luversof/bluesky-cloud-admin-server:latest
+#        imagePullPolicy: Never
+        lifecycle:
+          postStart:
+            exec:
+              command: ["mv", "/app.jar", "/test/app.jar"]
+        volumeMounts:
+        - name: app-volume
+          mountPath: /test
+      - name: java
+        image: openjdk:11-jre-slim
+        volumeMounts:
+        - name: app-volume
+          mountPath: /test
+        command: ["java", "-Dspring.profiles.active=k8sdev", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/test/app.jar"]
+#        args: ["--spring.profiles.active=k8sdev"]
+        ports:
+        - containerPort: 8889
+      volumes:
+      - name: app-volume
+        emptyDir: {}
+#      imagePullSecrets:
+#      - name: bluesky-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bluesky-cloud-admin-server-service
+spec:
+  selector:
+    app: bluesky-cloud-admin-server
+  ports:
+    - protocol: TCP
+      port: 8889
+      targetPort: 8889
+  type: LoadBalancer
