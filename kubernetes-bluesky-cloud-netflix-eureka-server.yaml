@@ -28,7 +28,7 @@ spec:
         - name: app-volume
           mountPath: /test
       - name: java
-        image: openjdk:11-jre-slim
+        image: openjdk:17-slim
         volumeMounts:
         - name: app-volume
           mountPath: /test
