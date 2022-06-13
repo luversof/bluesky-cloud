@@ -1,7 +1,7 @@
 INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VALUES
 ('application', 'default', 'master', 'spring.jpa.database', 'mysql'),
 ('application', 'default', 'master', 'spring.jpa.show-sql', 'true'),
-('application', 'default', 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MySQL5Dialect'),
+('application', 'default', 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MariaDB106Dialect'),
 ('application', 'default', 'master', 'spring.jpa.generate-ddl', 'true'),
 ('application', 'default', 'master', 'spring.jpa.hibernate.ddl-auto', 'create'),
 
