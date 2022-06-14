@@ -32,7 +32,7 @@ spec:
         volumeMounts:
         - name: app-volume
           mountPath: /test
-        command: ["java", "-Dspring.profiles.active=k8sdev", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/test/app.jar"]
+        command: ["java", "-Dspring.profiles.active=k8sdev,jdbc", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/test/app.jar"]
 #        args: ["--spring.profiles.active=k8sdev"]
         ports:
         - containerPort: 8888
