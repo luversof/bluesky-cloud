@@ -1,3 +1,4 @@
+call nerdctl login -u admin -p admin123 localhost:8083
 call mvn clean package -B -U -f ./bluesky-cloud-parent/pom.xml -DskipTests=true -P nexus-local
 call nerdctl build --build-arg JAR_FILE=bluesky-cloud-parent/bluesky-cloud-netflix-eureka-server/target/bluesky-cloud-netflix-eureka-server-0.0.1-SNAPSHOT.jar --tag luversof/bluesky-cloud-netflix-eureka-server .
 call nerdctl build --build-arg JAR_FILE=bluesky-cloud-parent/bluesky-cloud-config-server/target/bluesky-cloud-config-server-0.0.1-SNAPSHOT.jar --tag luversof/bluesky-cloud-config-server .
