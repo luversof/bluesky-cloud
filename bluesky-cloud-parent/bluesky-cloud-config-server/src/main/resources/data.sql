@@ -59,6 +59,6 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('bluesky-project', 'default', 'master', 'spring.security.oauth2.client.registration.google.client-id', '{cipher}AQBUzaF1d6vLNSpXDH+IG+1g9ahow0jRDfSUocr0Ssxz1schiplwLn+24kiNzLyKuhBc0+XPMc7s8avSAWBxychzOa9Amr16LW6cqSszBvn5OayN1gqewJPbV0LMUDwmuZ037O0xqiIsYoOTjOOdefdzgJ20RQDiNDocfi6U4bD0CUYvq/z7hauFcuk+RSJhs6i3bZ+hYv8mqHNCBT0qHJeGIlgjghZA84bFVhkv75kQklJWFkk8ARNZjBSRCdDvmTnDJYsvusWnW4xfQlhikuc6W0BXIkD8HxidFn1ozIS4jOzgBHmwrT0iNbRJWd61EhhqOvMa/vLHmkpNU4Scn3tAC+dznH5ePZpErH4TSIOYbpNPCqESJPjaRuW1oBX9rH4bMrhct8qxUa1yyknnSxAFhmutz+WvPV/SDkSuFkLqHd8WGJFQQkP0UIgsuoMZdqSc5f4SkqUdOxuFTp+NL15s'),
 ('bluesky-project', 'default', 'master', 'spring.security.oauth2.client.registration.google.client-secret', '{cipher}AQCGMSAOaaaudTF8TtXUWKd5jsn2frjcOlcUgPFPe/ejnn5vEyOhgnrbaVtgaqVKuqbR2jpbXAIw1LcH8DWW3/BJbAKOi4WMUjNheLy3S1J/gDg2GsaW0QzcKEPIcGjS/oG/MO5GEXH5EBwcK+1vwnpinxhuh85CHpX/4oFx+G+ywtKiUenIfzdWt7SgZDJ84gggYRHNI9XCri/loe4bIlp3Hh+fyAqlPBRaLxszk22Z7CNyKv3ZQ7a5WanITOeqMg0IUEIXRSw4QNnMQFk5WUrAN20XeVGwzeja2mT7N7DB8HxDQ8LDgiBN9r6bREwwGl1pFx0xHgtCDQbc2BaaufpKZdvemFWIisu1HgYI6ScG5ZGpubjBcoYQDNE2hme9YHWvV2tg/ymD2N4vWrxgfpgx'),
 
-('bluesky-project', 'default', 'master', 'api.battleNet.apiHost', 'https://kr.api.battle.net'),
-('bluesky-project', 'default', 'master', 'api.battleNet.host', 'https://kr.battle.net'),
-('bluesky-project', 'default', 'master', 'api.battleNet.apiKey', 'test');
+('bluesky-project', 'default', 'master', 'api.battle-net.api-host', 'https://kr.api.battle.net'),
+('bluesky-project', 'default', 'master', 'api.battle-net.host', 'https://kr.battle.net'),
+('bluesky-project', 'default', 'master', 'api.battle-net.api-key', 'test');
