@@ -1,5 +1,5 @@
 server:
-  port: 8761
+  port: 30100
 spring:
   config.import: classpath:/config/bootstrap.yml
   application:
