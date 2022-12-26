@@ -38,6 +38,13 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', 'localdev', 'master', 'datasource.mongodb.host', 'localhost'),
 ('application', 'localdev', 'master', 'datasource.mongodb.port', '27017'),
 
+('application', 'k8sdev', 'master', 'datasource.default.password', '{cipher}AQADDZ8BXL72JgHJTPoIgiAkK2nCcfItthEGthPHC2zN56T2Zt9VOCOv0x/hTCPQpQ5kZn02K7bYfRBzqQvPbMRocdkDeRGMqnv3/Ad2Xarf2bF1mMTk/XyrkHV/hZ4b1znTerl/Hafspjf5ByGIaZm7l/k8qX5nwC0fWR+UgEd5JeV/7YSbDefZDsI3Ipwp56oMmsPaLpfGHHSS+1KG+claCaLbdlpuwW2QMiPNwUN5i8dSIlcPubMEgfPax6WTgfAxHaBjIrNyIDpAjB+jvIj/6PoQiGI6n/5vuZGR5UnR6aEKJ8lywEnHXwBhe6BvccqKN/QkG5aOeKSNEXuHyVfQnyldYp8bgYFlJsto22Pc23LatNFWKGb7P5Z5ntTMnZg='),
+('application', 'k8sdev', 'master', 'datasource.default.type', 'com.zaxxer.hikari.HikariDataSource'),
+('application', 'k8sdev', 'master', 'datasource.default.url', 'jdbc:mariadb://mariadb-service:3306'),
+('application', 'k8sdev', 'master', 'datasource.default.username', '{cipher}AQB5yP3DsYsfA5wV1RtX3P4XC51TEXc3qxVb0RWkOsaLhLa8k2n8OI2OeKgwEjhBQeOPyZ6L2iOzLYnSrHftgTPuTtWAY3fK9bXTXji0WrJH+WidDcRHGTYIknBX3YhkyOzhqKvnIFfZA/URuIiv9Dg1KWGC/jjrLEZGV2vgZrcuekzEaQU/1jiI0kfDLVdhNQ6VrVlnKXKQDVKUPOFSLONwG/qFdbGCVD7YFfpcq9tLt18dQlApdoJbYfEIvxSjJAJFMI+3U6iefuWdC+MO4ZqL0lYT5glWkpNdTr+is08icCuEG0OrB4TkGBjEYUZzNgZK3yTBzS+rU2TwPkSFVhQFNeWOj0oXlBzZosPit0fk7MTazV/gx7IYfxyRADzLy4I='),
+
+('application', 'k8sdev', 'master', 'datasource.mongodb.host', 'mongo-service'),
+('application', 'k8sdev', 'master', 'datasource.mongodb.port', '27017'),
 
 ('bluesky-project', null, 'master', 'spring.security.oauth2.client.provider.battlenet.authorization-uri', 'https://kr.battle.net/oauth/authorize'),
 ('bluesky-project', null, 'master', 'spring.security.oauth2.client.provider.battlenet.token-uri', 'https://kr.battle.net/oauth/token'),
