@@ -1,6 +1,0 @@
-server:
-  port: 30102
-spring:
-  config.import: classpath:/config/bootstrap.yml
-  application:
-    name: bluesky-cloud-admin-server
