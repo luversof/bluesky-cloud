@@ -9,6 +9,7 @@
 	</parent>
 	<artifactId>bluesky-cloud-netflix-eureka-server</artifactId>
 	<dependencies>
+		<!-- (s) spring-cloud -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
@@ -17,6 +18,13 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-kubernetes-client-all</artifactId>
 		</dependency>
+		<!-- (e) spring-cloud -->
+		<!-- (s) boot admin -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+		</dependency>
+		<!-- (e) boot admin -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
