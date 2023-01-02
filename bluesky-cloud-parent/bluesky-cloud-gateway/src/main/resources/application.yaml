@@ -25,7 +25,7 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: after_route
-        uri: http://bluesky-api-bookkeeping-service:30130
+      - id: bluesky-api-bookkeeping
+        uri: http://bluesky-api-bookkeeping-service.default:30130
         predicates:
         - Host=bookkeeping.api.bluesky.local
