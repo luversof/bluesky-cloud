@@ -1,0 +1,31 @@
+server:
+  port: 30103
+
+spring:
+  application:
+    name: bluesky-cloud-gateway
+  config:
+    import: classpath:/config/bootstrap.yml
+
+---
+spring:
+  config:
+    activate:
+      on-profile: localdev | opdev
+debug: true
+
+server:
+  port: 40103
+
+---
+spring:
+  config:
+    activate:
+      on-profile: k8sdev
+  cloud:
+    gateway:
+      routes:
+      - id: after_route
+        uri: http://bluesky-api-bookkeeping-service:30130
+        predicates:
+        - Host=bookkeeping.api.bluesky.local
