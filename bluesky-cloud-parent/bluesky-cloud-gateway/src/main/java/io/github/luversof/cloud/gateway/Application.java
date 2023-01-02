@@ -10,14 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class Application {
 	
-	@RestController
-	public static class IndexController {
-		@GetMapping("/")
-		public String index() {
-			return "gateway";
-		}
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
