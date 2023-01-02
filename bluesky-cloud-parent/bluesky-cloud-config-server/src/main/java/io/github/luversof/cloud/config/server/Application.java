@@ -14,7 +14,7 @@ public class Application {
 	
 	@RestController
 	public static class IndexController {
-		@GetMapping("")
+		@GetMapping("/")
 		public String index() {
 			return "configServer";
 		}
