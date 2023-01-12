@@ -2,7 +2,11 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: bluesky-api-bookkeeping
-        uri: http://localhost:30130
+      - id: bluesky-api-bookkeeping-service
+        uri: lb://BLUESKY-API-BOOKKEEPING-SERVICE
         predicates:
-        - Host=bookkeeping.api.bluesky.local
+        - Path=/api/bookkeeping/**
+      - id: bluesky-api-user-service
+        uri: lb://BLUESKY-API-USER-SERVICE
+        predicates:
+        - Path=/api/user/**
