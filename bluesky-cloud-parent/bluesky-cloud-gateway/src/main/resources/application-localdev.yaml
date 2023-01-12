@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: bluesky-api-bookkeeping-service
+        uri: http://bookkeeping.api.bluesky.local
+        predicates:
+        - Path=/api/bookkeeping,/api/bookkeeping/**
+      - id: bluesky-api-user-service
+        uri: http://user.api.bluesky.local
+        predicates:
+        - Path=/api/user,/api/user/**
