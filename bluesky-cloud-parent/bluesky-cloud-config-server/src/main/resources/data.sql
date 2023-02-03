@@ -42,6 +42,7 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', 'k8sdev', 'master', 'datasource.default.type', 'com.zaxxer.hikari.HikariDataSource'),
 ('application', 'k8sdev', 'master', 'datasource.default.url', 'jdbc:mariadb://mariadb-service:3306'),
 ('application', 'k8sdev', 'master', 'datasource.default.username', '{cipher}AQB5yP3DsYsfA5wV1RtX3P4XC51TEXc3qxVb0RWkOsaLhLa8k2n8OI2OeKgwEjhBQeOPyZ6L2iOzLYnSrHftgTPuTtWAY3fK9bXTXji0WrJH+WidDcRHGTYIknBX3YhkyOzhqKvnIFfZA/URuIiv9Dg1KWGC/jjrLEZGV2vgZrcuekzEaQU/1jiI0kfDLVdhNQ6VrVlnKXKQDVKUPOFSLONwG/qFdbGCVD7YFfpcq9tLt18dQlApdoJbYfEIvxSjJAJFMI+3U6iefuWdC+MO4ZqL0lYT5glWkpNdTr+is08icCuEG0OrB4TkGBjEYUZzNgZK3yTBzS+rU2TwPkSFVhQFNeWOj0oXlBzZosPit0fk7MTazV/gx7IYfxyRADzLy4I='),
+('application', 'k8sdev', 'master', 'spring.data.redis.host', 'redis-service'),
 
 ('application', 'k8sdev', 'master', 'datasource.mongodb.host', 'mongo-service'),
 ('application', 'k8sdev', 'master', 'datasource.mongodb.port', '27017'),
