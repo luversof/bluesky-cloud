@@ -1,4 +1,7 @@
 INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VALUES
+('application', null, 'master', 'server.tomcat.accesslog.enabled', 'true'),
+('application', null, 'master', 'server.tomcat.accesslog.directory', './logs'),
+
 ('application', null, 'master', 'spring.jpa.database', 'mysql'),
 ('application', null, 'master', 'spring.jpa.show-sql', 'true'),
 ('application', null, 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MariaDB106Dialect'),
