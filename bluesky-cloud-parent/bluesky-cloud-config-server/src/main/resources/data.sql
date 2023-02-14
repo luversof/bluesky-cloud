@@ -1,14 +1,14 @@
 INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VALUES
 ('application', null, 'master', 'server.tomcat.accesslog.enabled', 'true'),
-('application', null, 'master', 'server.tomcat.accesslog.directory', './logs'),
+('application', ''k8sdev', 'master', 'server.tomcat.accesslog.directory', '/usr/local/app/logs'),
 
 ('application', null, 'master', 'spring.jpa.database', 'mysql'),
 ('application', null, 'master', 'spring.jpa.show-sql', 'true'),
 ('application', null, 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MariaDB106Dialect'),
 ('application', null, 'master', 'spring.jpa.generate-ddl', 'true'),
 ('application', null, 'master', 'spring.jpa.hibernate.ddl-auto', 'create'),
-
 ('application', null, 'master', 'spring.jpa.properties.hibernate.dialect.storage_engine', 'innodb'),
+
 ('application', null, 'master', 'bluesky-modules.mongodb.default-mongo-properties.authentication-database', 'admin'),
 ('application', null, 'master', 'bluesky-modules.mongodb.default-connection-pool-settings.max-size', '30'),
 ('application', null, 'master', 'bluesky-modules.mongodb.default-connection-pool-settings.min-size', '10'),
@@ -20,33 +20,29 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', null, 'master', 'bluesky-modules.mongodb.default-write-concern.w', 'W1'),
 ('application', null, 'master', 'bluesky-modules.mongodb.default-write-concern.w-timeout-m-s', '5000'),
 ('application', null, 'master', 'bluesky-modules.mongodb.default-write-concern.journal', 'false'),
-
-('application', null, 'master', 'spring.data.rest.base-path', '/api'),
+('application', 'opdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.host', 'localhost'),
+('application', 'opdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.port', '27017'),
+('application', 'localdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.host', 'localhost'),
+('application', 'localdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.port', '27017'),
+('application', 'k8sdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.host', 'mongo-service'),
+('application', 'k8sdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.port', '27017'),
 
 ('application', 'opdev', 'master', 'datasource.default.password', '{cipher}AQBvRFjoe8YJ9dLw5WTlOSqGVIxcGS9x1L831KH5xO75+K/fyZvicgkYjObC97fUV+T/F/wgm8gNjBDsNng2A5L7/jLLBxkSpJ6EPRHQqp6SxPtOd9YkSaJ7ihbhvjySx6GpwDkGO6qvRmG5WhQ5/FBzlURv6et3OJDajAXDRXw0iOBdNGT6fLioQpeNlrsurFr82nWPbeSZ3PXY8o8i2xP2Xay8vElR9QsERcRgRt6dp0Ho4tovRyKxYTeChOYoU1qQaFuyK0SoTCh78hCbvtSQGTYQOzsX+JQG/QPlEMV1Rl7ZeTMxcMQYVsdDA3u5aT0PPFDIZDZDPGa6ahWDHAZzyNkK2ftvRkPOO3JkHb3bwUicz1Rv66eCEdaTH02SXro='),
 ('application', 'opdev', 'master', 'datasource.default.type', 'com.zaxxer.hikari.HikariDataSource'),
 ('application', 'opdev', 'master', 'datasource.default.url', 'jdbc:mariadb://localhost:3306'),
 ('application', 'opdev', 'master', 'datasource.default.username', '{cipher}AQCU17f7Qd66Uy4x4HkIL+hoUNy79up90emBqlxmpB0gS4KG8I1+XAiTsDR/ID/yzNV+jnNBOaYhzQiDACXPJBbHMlxLHE3k45UthgWqx1vjrlggO37gne3upkJvbbRSs8dUIFT8A7bA83UPzuEZNhEOeQfgTMEUnDVgvtFbEmA6ra9BQ0lT8ysu/EPjBKgXQh5G5K8DaqNfx/qS1M7zCmw28zursxOKYLn/2cVxG8WV8D/d7xFL4cUtloQp+zaDTd6tlJoQSGueAx0KxoAtkW+o7jhQWRvT3I8NyrsPDJKizHmqnuc6knGmUQ3oBnhMqkPyJDXw9KhS/On3pBXAb5bq5eIjkR6RdaokQ1/3/pt5ZY5QSNJD1sVhrWZsLAfoQzA='),
-
-('application', 'opdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.host', 'localhost'),
-('application', 'opdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.port', '27017'),
-
 ('application', 'localdev', 'master', 'datasource.default.password', '{cipher}AQADDZ8BXL72JgHJTPoIgiAkK2nCcfItthEGthPHC2zN56T2Zt9VOCOv0x/hTCPQpQ5kZn02K7bYfRBzqQvPbMRocdkDeRGMqnv3/Ad2Xarf2bF1mMTk/XyrkHV/hZ4b1znTerl/Hafspjf5ByGIaZm7l/k8qX5nwC0fWR+UgEd5JeV/7YSbDefZDsI3Ipwp56oMmsPaLpfGHHSS+1KG+claCaLbdlpuwW2QMiPNwUN5i8dSIlcPubMEgfPax6WTgfAxHaBjIrNyIDpAjB+jvIj/6PoQiGI6n/5vuZGR5UnR6aEKJ8lywEnHXwBhe6BvccqKN/QkG5aOeKSNEXuHyVfQnyldYp8bgYFlJsto22Pc23LatNFWKGb7P5Z5ntTMnZg='),
 ('application', 'localdev', 'master', 'datasource.default.type', 'com.zaxxer.hikari.HikariDataSource'),
 ('application', 'localdev', 'master', 'datasource.default.url', 'jdbc:mariadb://localhost:3306'),
 ('application', 'localdev', 'master', 'datasource.default.username', '{cipher}AQB5yP3DsYsfA5wV1RtX3P4XC51TEXc3qxVb0RWkOsaLhLa8k2n8OI2OeKgwEjhBQeOPyZ6L2iOzLYnSrHftgTPuTtWAY3fK9bXTXji0WrJH+WidDcRHGTYIknBX3YhkyOzhqKvnIFfZA/URuIiv9Dg1KWGC/jjrLEZGV2vgZrcuekzEaQU/1jiI0kfDLVdhNQ6VrVlnKXKQDVKUPOFSLONwG/qFdbGCVD7YFfpcq9tLt18dQlApdoJbYfEIvxSjJAJFMI+3U6iefuWdC+MO4ZqL0lYT5glWkpNdTr+is08icCuEG0OrB4TkGBjEYUZzNgZK3yTBzS+rU2TwPkSFVhQFNeWOj0oXlBzZosPit0fk7MTazV/gx7IYfxyRADzLy4I='),
-
-('application', 'localdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.host', 'localhost'),
-('application', 'localdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.port', '27017'),
-
 ('application', 'k8sdev', 'master', 'datasource.default.password', '{cipher}AQADDZ8BXL72JgHJTPoIgiAkK2nCcfItthEGthPHC2zN56T2Zt9VOCOv0x/hTCPQpQ5kZn02K7bYfRBzqQvPbMRocdkDeRGMqnv3/Ad2Xarf2bF1mMTk/XyrkHV/hZ4b1znTerl/Hafspjf5ByGIaZm7l/k8qX5nwC0fWR+UgEd5JeV/7YSbDefZDsI3Ipwp56oMmsPaLpfGHHSS+1KG+claCaLbdlpuwW2QMiPNwUN5i8dSIlcPubMEgfPax6WTgfAxHaBjIrNyIDpAjB+jvIj/6PoQiGI6n/5vuZGR5UnR6aEKJ8lywEnHXwBhe6BvccqKN/QkG5aOeKSNEXuHyVfQnyldYp8bgYFlJsto22Pc23LatNFWKGb7P5Z5ntTMnZg='),
 ('application', 'k8sdev', 'master', 'datasource.default.type', 'com.zaxxer.hikari.HikariDataSource'),
 ('application', 'k8sdev', 'master', 'datasource.default.url', 'jdbc:mariadb://mariadb-service:3306'),
 ('application', 'k8sdev', 'master', 'datasource.default.username', '{cipher}AQB5yP3DsYsfA5wV1RtX3P4XC51TEXc3qxVb0RWkOsaLhLa8k2n8OI2OeKgwEjhBQeOPyZ6L2iOzLYnSrHftgTPuTtWAY3fK9bXTXji0WrJH+WidDcRHGTYIknBX3YhkyOzhqKvnIFfZA/URuIiv9Dg1KWGC/jjrLEZGV2vgZrcuekzEaQU/1jiI0kfDLVdhNQ6VrVlnKXKQDVKUPOFSLONwG/qFdbGCVD7YFfpcq9tLt18dQlApdoJbYfEIvxSjJAJFMI+3U6iefuWdC+MO4ZqL0lYT5glWkpNdTr+is08icCuEG0OrB4TkGBjEYUZzNgZK3yTBzS+rU2TwPkSFVhQFNeWOj0oXlBzZosPit0fk7MTazV/gx7IYfxyRADzLy4I='),
-('application', 'k8sdev', 'master', 'spring.data.redis.host', 'redis-service'),
 
-('application', 'k8sdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.host', 'mongo-service'),
-('application', 'k8sdev', 'master', 'bluesky-modules.mongodb.default-mongo-properties.port', '27017'),
+('application', null, 'master', 'spring.data.rest.base-path', '/api'),
+
+('application', 'k8sdev', 'master', 'spring.data.redis.host', 'redis-service'),
 
 ('bluesky-project', null, 'master', 'spring.security.oauth2.client.provider.battlenet.authorization-uri', 'https://kr.battle.net/oauth/authorize'),
 ('bluesky-project', null, 'master', 'spring.security.oauth2.client.provider.battlenet.token-uri', 'https://kr.battle.net/oauth/token'),
