@@ -1,6 +1,6 @@
 INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VALUES
 ('application', null, 'master', 'server.tomcat.accesslog.enabled', 'true'),
-('application', ''k8sdev', 'master', 'server.tomcat.accesslog.directory', '/usr/local/app/logs'),
+('application', 'k8sdev', 'master', 'server.tomcat.accesslog.directory', '/usr/local/app/logs'),
 
 ('application', null, 'master', 'spring.jpa.database', 'mysql'),
 ('application', null, 'master', 'spring.jpa.show-sql', 'true'),
