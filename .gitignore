@@ -236,4 +236,4 @@ buildNumber.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/git,java,maven,eclipse,intellij+all,visualstudiocode
 
-*.out
+logs/
