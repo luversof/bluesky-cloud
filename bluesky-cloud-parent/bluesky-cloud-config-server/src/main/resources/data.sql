@@ -1,5 +1,11 @@
 INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VALUES
 
+('application', null, 'master', 'logging.pattern.level', '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'),
+('application', null, 'master', 'management.tracing.sampling.probability', '0.1'),
+('application', 'opdev', 'master', 'management.zipkin.tracing.endpoint', 'http://dev.bluesky.local:9411/api/v2/spans'),
+('application', 'localdev', 'master', 'management.zipkin.tracing.endpoint', 'http://dev.bluesky.local:9411/api/v2/spans'),
+('application', 'k8sdev', 'master', 'management.zipkin.tracing.endpoint', 'http://opentelemetry-collector-service:9411/api/v2/spans'),
+
 ('application', null, 'master', 'spring.jpa.database', 'mysql'),
 ('application', null, 'master', 'spring.jpa.show-sql', 'true'),
 ('application', null, 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MariaDB106Dialect'),
