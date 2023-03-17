@@ -2,15 +2,6 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 
 ('application', null, 'master', 'logging.pattern.level', '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'),
 
-('application', null, 'master', 'management.info.env.enabled', 'true'),
-('application', null, 'master', 'management.info.java.enabled', 'true'),
-('application', null, 'master', 'management.info.os.enabled', 'true'),
-('application', null, 'master', 'management.endpoint.health.show-details', 'always'),
-('application', null, 'master', 'management.endpoint.health.probes.enabled', 'true'),
-('application', null, 'master', 'management.endpoint.env.show-values', 'always'),
-('application', null, 'master', 'management.endpoint.configprops.show-values', 'always'),
-('application', null, 'master', 'management.endpoints.web.exposure.include', '*'),
-
 ('application', null, 'master', 'management.tracing.sampling.probability', '1.0'),
 ('application', 'opdev', 'master', 'management.zipkin.tracing.endpoint', 'http://dev.bluesky.local:9411/api/v2/spans'),
 ('application', 'localdev', 'master', 'management.zipkin.tracing.endpoint', 'http://dev.bluesky.local:9411/api/v2/spans'),
