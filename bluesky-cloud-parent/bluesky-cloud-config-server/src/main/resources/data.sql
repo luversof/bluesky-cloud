@@ -2,7 +2,7 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 
 ('application', null, 'master', 'spring.jpa.database', 'mysql'),
 ('application', null, 'master', 'spring.jpa.show-sql', 'true'),
-('application', null, 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MariaDB106Dialect'),
+('application', null, 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MariaDBDialect'),
 ('application', null, 'master', 'spring.jpa.generate-ddl', 'true'),
 ('application', null, 'master', 'spring.jpa.hibernate.ddl-auto', 'create'),
 ('application', null, 'master', 'spring.jpa.properties.hibernate.dialect.storage_engine', 'innodb'),
