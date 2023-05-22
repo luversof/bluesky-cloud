@@ -6,7 +6,7 @@
 	<packaging>pom</packaging>
 	<parent>
 		<groupId>io.github.luversof</groupId>
-		<artifactId>bluesky-boot-starter-parent</artifactId>
+		<artifactId>bluesky-boot-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modules>
@@ -35,7 +35,7 @@
 			<repositories>
 				<repository>
 					<id>bluesky-nexus-docker</id>
-					<url>http://localhost:8082/repository/maven-public/</url>
+					<url>http://nexus.bluesky.local/repository/maven-public/</url>
 					<releases>
 						<enabled>true</enabled>
 					</releases>
@@ -48,11 +48,11 @@
 			<distributionManagement>
 				<repository>
 					<id>bluesky-releases</id>
-					<url>http://localhost:8082/repository/maven-releases/</url>
+					<url>http://nexus.bluesky.local/repository/maven-releases/</url>
 				</repository>
 				<snapshotRepository>
 					<id>bluesky-snapshots</id>
-					<url>http://localhost:8082/repository/maven-snapshots/</url>
+					<url>http://nexus.bluesky.local/repository/maven-snapshots/</url>
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
