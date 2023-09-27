@@ -38,6 +38,28 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', 'k8sdev', 'master', 'datasource.default.url', 'jdbc:mariadb://mariadb-service:3306'),
 ('application', 'k8sdev', 'master', 'datasource.default.username', '{cipher}AQB5yP3DsYsfA5wV1RtX3P4XC51TEXc3qxVb0RWkOsaLhLa8k2n8OI2OeKgwEjhBQeOPyZ6L2iOzLYnSrHftgTPuTtWAY3fK9bXTXji0WrJH+WidDcRHGTYIknBX3YhkyOzhqKvnIFfZA/URuIiv9Dg1KWGC/jjrLEZGV2vgZrcuekzEaQU/1jiI0kfDLVdhNQ6VrVlnKXKQDVKUPOFSLONwG/qFdbGCVD7YFfpcq9tLt18dQlApdoJbYfEIvxSjJAJFMI+3U6iefuWdC+MO4ZqL0lYT5glWkpNdTr+is08icCuEG0OrB4TkGBjEYUZzNgZK3yTBzS+rU2TwPkSFVhQFNeWOj0oXlBzZosPit0fk7MTazV/gx7IYfxyRADzLy4I='),
 
+
+('application', 'opdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.url', 'jdbc:mariadb://mariadb.bluesky.local:3306/connection_info'),
+('application', 'opdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.username', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
+('application', 'opdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.password', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
+('application', 'opdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.url', 'jdbc:sqlserver://mssql.bluesky.local;encrypt=false;databaseName=connection_info'),
+('application', 'opdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.username', '{text}6dfa79bdb4311fe011683a2fbf1b281eb6bfe47523575919533e1c0a99986dfa'),
+('application', 'opdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.password', '{text}cd59e88989c267f8e68e5195fd9e8cc16110118a78f04f14da9f72aa4eda0b85'),
+('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.url', 'jdbc:mariadb://mariadb.bluesky.local:3306/connection_info'),
+('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.username', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
+('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.password', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
+('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.url', 'jdbc:sqlserver://mssql.bluesky.local;encrypt=false;databaseName=connection_info'),
+('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.username', '{text}6dfa79bdb4311fe011683a2fbf1b281eb6bfe47523575919533e1c0a99986dfa'),
+('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.password', '{text}cd59e88989c267f8e68e5195fd9e8cc16110118a78f04f14da9f72aa4eda0b85'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.url', 'jdbc:mariadb://mariadb-service:3306/connection_info'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.username', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.password', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.url', 'jdbc:sqlserver://mssql-service;encrypt=false;databaseName=connection_info'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.username', '{text}6dfa79bdb4311fe011683a2fbf1b281eb6bfe47523575919533e1c0a99986dfa'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.password', '{text}cd59e88989c267f8e68e5195fd9e8cc16110118a78f04f14da9f72aa4eda0b85'),
+
+
+
 ('application', null, 'master', 'spring.data.rest.base-path', '/api'),
 
 ('application', 'k8sdev', 'master', 'spring.data.redis.host', 'redis-service'),
