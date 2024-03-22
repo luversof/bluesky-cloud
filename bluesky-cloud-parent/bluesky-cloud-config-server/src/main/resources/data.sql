@@ -22,7 +22,7 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', 'opdev', 'master', 'bluesky-boot.mongodb.default-mongo-properties.port', '27017'),
 ('application', 'localdev', 'master', 'bluesky-boot.mongodb.default-mongo-properties.host', 'mongo.bluesky.local'),
 ('application', 'localdev', 'master', 'bluesky-boot.mongodb.default-mongo-properties.port', '27017'),
-('application', 'k8sdev', 'master', 'bluesky-boot.mongodb.default-mongo-properties.host', 'mongo-service'),
+('application', 'k8sdev', 'master', 'bluesky-boot.mongodb.default-mongo-properties.host', 'mongo-service.opensource'),
 ('application', 'k8sdev', 'master', 'bluesky-boot.mongodb.default-mongo-properties.port', '27017'),
 
 ('application', 'opdev', 'master', 'datasource.default.password', '{cipher}AQBvRFjoe8YJ9dLw5WTlOSqGVIxcGS9x1L831KH5xO75+K/fyZvicgkYjObC97fUV+T/F/wgm8gNjBDsNng2A5L7/jLLBxkSpJ6EPRHQqp6SxPtOd9YkSaJ7ihbhvjySx6GpwDkGO6qvRmG5WhQ5/FBzlURv6et3OJDajAXDRXw0iOBdNGT6fLioQpeNlrsurFr82nWPbeSZ3PXY8o8i2xP2Xay8vElR9QsERcRgRt6dp0Ho4tovRyKxYTeChOYoU1qQaFuyK0SoTCh78hCbvtSQGTYQOzsX+JQG/QPlEMV1Rl7ZeTMxcMQYVsdDA3u5aT0PPFDIZDZDPGa6ahWDHAZzyNkK2ftvRkPOO3JkHb3bwUicz1Rv66eCEdaTH02SXro='),
@@ -35,7 +35,7 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', 'localdev', 'master', 'datasource.default.username', '{cipher}AQB5yP3DsYsfA5wV1RtX3P4XC51TEXc3qxVb0RWkOsaLhLa8k2n8OI2OeKgwEjhBQeOPyZ6L2iOzLYnSrHftgTPuTtWAY3fK9bXTXji0WrJH+WidDcRHGTYIknBX3YhkyOzhqKvnIFfZA/URuIiv9Dg1KWGC/jjrLEZGV2vgZrcuekzEaQU/1jiI0kfDLVdhNQ6VrVlnKXKQDVKUPOFSLONwG/qFdbGCVD7YFfpcq9tLt18dQlApdoJbYfEIvxSjJAJFMI+3U6iefuWdC+MO4ZqL0lYT5glWkpNdTr+is08icCuEG0OrB4TkGBjEYUZzNgZK3yTBzS+rU2TwPkSFVhQFNeWOj0oXlBzZosPit0fk7MTazV/gx7IYfxyRADzLy4I='),
 ('application', 'k8sdev', 'master', 'datasource.default.password', '{cipher}AQADDZ8BXL72JgHJTPoIgiAkK2nCcfItthEGthPHC2zN56T2Zt9VOCOv0x/hTCPQpQ5kZn02K7bYfRBzqQvPbMRocdkDeRGMqnv3/Ad2Xarf2bF1mMTk/XyrkHV/hZ4b1znTerl/Hafspjf5ByGIaZm7l/k8qX5nwC0fWR+UgEd5JeV/7YSbDefZDsI3Ipwp56oMmsPaLpfGHHSS+1KG+claCaLbdlpuwW2QMiPNwUN5i8dSIlcPubMEgfPax6WTgfAxHaBjIrNyIDpAjB+jvIj/6PoQiGI6n/5vuZGR5UnR6aEKJ8lywEnHXwBhe6BvccqKN/QkG5aOeKSNEXuHyVfQnyldYp8bgYFlJsto22Pc23LatNFWKGb7P5Z5ntTMnZg='),
 ('application', 'k8sdev', 'master', 'datasource.default.type', 'com.zaxxer.hikari.HikariDataSource'),
-('application', 'k8sdev', 'master', 'datasource.default.url', 'jdbc:mariadb://mariadb-service:3306'),
+('application', 'k8sdev', 'master', 'datasource.default.url', 'jdbc:mariadb://mariadb-service.opensource:3306'),
 ('application', 'k8sdev', 'master', 'datasource.default.username', '{cipher}AQB5yP3DsYsfA5wV1RtX3P4XC51TEXc3qxVb0RWkOsaLhLa8k2n8OI2OeKgwEjhBQeOPyZ6L2iOzLYnSrHftgTPuTtWAY3fK9bXTXji0WrJH+WidDcRHGTYIknBX3YhkyOzhqKvnIFfZA/URuIiv9Dg1KWGC/jjrLEZGV2vgZrcuekzEaQU/1jiI0kfDLVdhNQ6VrVlnKXKQDVKUPOFSLONwG/qFdbGCVD7YFfpcq9tLt18dQlApdoJbYfEIvxSjJAJFMI+3U6iefuWdC+MO4ZqL0lYT5glWkpNdTr+is08icCuEG0OrB4TkGBjEYUZzNgZK3yTBzS+rU2TwPkSFVhQFNeWOj0oXlBzZosPit0fk7MTazV/gx7IYfxyRADzLy4I='),
 
 
@@ -51,10 +51,10 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.url', 'jdbc:sqlserver://mssql.bluesky.local;encrypt=false;databaseName=connection_info'),
 ('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.username', '{text}6dfa79bdb4311fe011683a2fbf1b281eb6bfe47523575919533e1c0a99986dfa'),
 ('application', 'localdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.password', '{text}cd59e88989c267f8e68e5195fd9e8cc16110118a78f04f14da9f72aa4eda0b85'),
-('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.url', 'jdbc:mariadb://mariadb-service:3306/connection_info'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.url', 'jdbc:mariadb://mariadb-service.opensource:3306/connection_info'),
 ('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.username', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
 ('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.mariadb-datasource.properties.password', '{text}dd2d9a9a3735b9f9a63664dca900b04e34d92759a43d301c74dd60d235c9576c'),
-('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.url', 'jdbc:sqlserver://mssql-service;encrypt=false;databaseName=connection_info'),
+('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.url', 'jdbc:sqlserver://mssql-service.opensource;encrypt=false;databaseName=connection_info'),
 ('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.username', '{text}6dfa79bdb4311fe011683a2fbf1b281eb6bfe47523575919533e1c0a99986dfa'),
 ('application', 'k8sdev', 'master', 'bluesky-boot.connection-info.loaders.sqlserver-datasource.properties.password', '{text}cd59e88989c267f8e68e5195fd9e8cc16110118a78f04f14da9f72aa4eda0b85'),
 
@@ -62,7 +62,7 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 
 ('application', null, 'master', 'spring.data.rest.base-path', '/api'),
 
-('application', 'k8sdev', 'master', 'spring.data.redis.host', 'redis-service'),
+('application', 'k8sdev', 'master', 'spring.data.redis.host', 'redis-service.opensource'),
 
 ('bluesky-project', null, 'master', 'spring.security.oauth2.client.provider.battlenet.authorization-uri', 'https://kr.battle.net/oauth/authorize'),
 ('bluesky-project', null, 'master', 'spring.security.oauth2.client.provider.battlenet.token-uri', 'https://kr.battle.net/oauth/token'),
