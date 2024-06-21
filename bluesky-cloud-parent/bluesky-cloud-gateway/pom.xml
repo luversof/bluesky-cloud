@@ -28,10 +28,10 @@
 		</dependency>
 		<!-- (e) boot admin -->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-access</artifactId>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-prometheus</artifactId>
