@@ -5,6 +5,7 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', null, 'master', 'spring.jpa.database-platform', 'org.hibernate.dialect.MariaDBDialect'),
 ('application', null, 'master', 'spring.jpa.generate-ddl', 'true'),
 ('application', null, 'master', 'spring.jpa.hibernate.ddl-auto', 'update'),
+('application', null, 'master', 'spring.jpa.hibernate.naming.physical-strategy', 'org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl'),
 ('application', null, 'master', 'spring.jpa.properties.hibernate.dialect.storage_engine', 'innodb'),
 
 ('application', null, 'master', 'bluesky-boot.mongodb.default-mongo-properties.authentication-database', 'admin'),
