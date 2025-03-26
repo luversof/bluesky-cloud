@@ -8,6 +8,8 @@ INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`) VAL
 ('application', null, 'master', 'spring.jpa.hibernate.naming.physical-strategy', 'org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl'),
 ('application', null, 'master', 'spring.jpa.properties.hibernate.dialect.storage_engine', 'innodb'),
 
+('application', null, 'master', 'server.tomcat.use-relative-redirects', 'true'),
+
 ('application', null, 'master', 'bluesky-boot.mongodb.default-mongo-properties.authentication-database', 'admin'),
 ('application', null, 'master', 'bluesky-boot.mongodb.default-connection-pool-settings.max-size', '30'),
 ('application', null, 'master', 'bluesky-boot.mongodb.default-connection-pool-settings.min-size', '10'),
