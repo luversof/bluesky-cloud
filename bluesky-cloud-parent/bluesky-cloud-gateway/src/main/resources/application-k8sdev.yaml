@@ -22,3 +22,27 @@ spring:
         uri: lb://bluesky-api-user-service
         predicates:
         - Host=user.api.bluesky.local
+      - id: bluesky-cloud-admin-server
+        uri: lb://bluesky-cloud-admin-server-service
+        predicates:
+        - Host=admin.cloud.bluesky.local
+      - id: bluesky-cloud-config-server
+        uri: lb://bluesky-cloud-config-server-service
+        predicates:
+        - Host=config.cloud.bluesky.local
+      - id: bluesky-cloud-netflix-eureka-server-1
+        uri: lb://bluesky-cloud-config-server-1-service
+        predicates:
+        - Host=eureka1.cloud.bluesky.local
+      - id: bluesky-cloud-netflix-eureka-server-2
+        uri: lb://bluesky-cloud-config-server-2-service
+        predicates:
+        - Host=eureka2.cloud.bluesky.local
+      - id: bluesky-web-gate
+        uri: lb://bluesky-web-gate-service
+        predicates:
+        - Host=gate.web.bluesky.local
+      - id: bluesky-web-swagger-ui
+        uri: lb://bluesky-web-swagger-ui-service
+        predicates:
+        - Host=swagger.web.bluesky.local
