@@ -2,11 +2,23 @@ spring:
   cloud:
     gateway:
       routes:
+      - id: bluesky-api-blog
+        uri: lb://bluesky-api-blog-service
+        predicates:
+        - Host=blog.api.bluesky.local
+      - id: bluesky-api-board
+        uri: lb://bluesky-api-board-service
+        predicates:
+        - Host=board.api.bluesky.local
       - id: bluesky-api-bookkeeping
         uri: lb://bluesky-api-bookkeeping-service
         predicates:
-        - Path=/api/bookkeeping,/api/bookkeeping/**
+        - Host=bookkeeping.api.bluesky.local
+      - id: bluesky-api-stock
+        uri: lb://bluesky-api-stock-service
+        predicates:
+        - Host=stock.api.bluesky.local
       - id: bluesky-api-user
         uri: lb://bluesky-api-user-service
         predicates:
-        - Path=/api/user,/api/user/**
+        - Host=user.api.bluesky.local
