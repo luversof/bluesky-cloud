@@ -1,12 +1,24 @@
 spring:
   cloud:
     gateway:
-      routes:
+      server.webflux.routes:
+      - id: bluesky-api-blog
+        uri: https://blog.api.bluesky.local
+        predicates:
+        - Host=blog.api.bluesky.local
+      - id: bluesky-api-board
+        uri: https://board.api.bluesky.local
+        predicates:
+        - Host=board.api.bluesky.local
       - id: bluesky-api-bookkeeping
         uri: https://bookkeeping.api.bluesky.local
         predicates:
-        - Path=/api/bookkeeping,/api/bookkeeping/**
+        - Host=bookkeeping.api.bluesky.local
+      - id: bluesky-api-stock
+        uri: https://stock.api.bluesky.local
+        predicates:
+        - Host=stock.api.bluesky.local
       - id: bluesky-api-user
         uri: https://user.api.bluesky.local
         predicates:
-        - Path=/api/user,/api/user/**
+        - Host=user.api.bluesky.local
