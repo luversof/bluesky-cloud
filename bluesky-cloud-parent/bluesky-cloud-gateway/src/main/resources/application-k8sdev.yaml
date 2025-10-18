@@ -31,11 +31,11 @@ spring:
         predicates:
         - Host=config.cloud.bluesky.local
       - id: bluesky-cloud-netflix-eureka-server-1
-        uri: lb://bluesky-cloud-config-server-1-service
+        uri: lb://bluesky-cloud-netflix-eureka-server-1-service
         predicates:
         - Host=eureka1.cloud.bluesky.local
       - id: bluesky-cloud-netflix-eureka-server-2
-        uri: lb://bluesky-cloud-config-server-2-service
+        uri: lb://bluesky-cloud-netflix-eureka-server-2-service
         predicates:
         - Host=eureka2.cloud.bluesky.local
       - id: bluesky-web-gate
