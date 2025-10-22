@@ -7,6 +7,7 @@ INSERT INTO spring_config.PROPERTIES (APPLICATION,PROFILE,LABEL,`KEY`,VALUE) VAL
 	 ('application',NULL,'master','spring.jpa.hibernate.naming.physical-strategy','org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl'),
 	 ('application',NULL,'master','spring.jpa.properties.hibernate.dialect.storage_engine','innodb'),
 	 ('application',NULL,'master','server.tomcat.use-relative-redirects','true'),
+	 ('application',NULL,'master','server.tomcat.basedir','.'),
 	 ('application',NULL,'master','server.tomcat.accesslog.enabled','true'),
 	 ('application',NULL,'master','bluesky-boot.mongodb.default-mongo-properties.authentication-database','admin'),
 	 ('application',NULL,'master','bluesky-boot.mongodb.default-connection-pool-settings.max-size','30'),
