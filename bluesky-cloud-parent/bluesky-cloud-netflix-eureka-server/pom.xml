@@ -17,23 +17,12 @@
 			<artifactId>spring-cloud-starter-kubernetes-client-all</artifactId>
 		</dependency>
 		<!-- (e) spring-cloud -->
-		<!-- (s) boot admin -->
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-starter-client</artifactId>
-		</dependency>
-		<!-- (e) boot admin -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!--<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-access</artifactId>
-		</dependency>-->
 
 		<!-- (s) micrometer metrics -->
 		<dependency>

@@ -21,12 +21,6 @@
 			<artifactId>spring-cloud-starter-kubernetes-client-all</artifactId>
 		</dependency>
 		<!-- (e) spring-cloud -->
-		<!-- (s) boot admin -->
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-starter-client</artifactId>
-		</dependency>
-		<!-- (e) boot admin -->
 		<!-- (s) jdbc -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,11 +31,6 @@
 			<artifactId>mariadb-java-client</artifactId>
 		</dependency>
 		<!-- (s) jdbc -->
-
-		<!--<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-access</artifactId>
-		</dependency>-->
 
 		<!-- (s) micrometer metrics -->
 		<dependency>

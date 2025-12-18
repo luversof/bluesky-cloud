@@ -22,13 +22,6 @@
 			<artifactId>spring-cloud-starter-kubernetes-client-all</artifactId>
 		</dependency>
 		<!-- (e) spring-cloud -->
-		
-		<!-- (s) boot admin -->
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-starter-client</artifactId>
-		</dependency>
-		<!-- (e) boot admin -->
 
 		<!-- (s) micrometer metrics -->
 		<dependency>
