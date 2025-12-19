@@ -13,7 +13,6 @@
 	<modules>
 		<module>bluesky-cloud-config-server</module>
 		<module>bluesky-cloud-netflix-eureka-server</module>
-		<module>bluesky-cloud-admin-server</module>
 		<module>bluesky-cloud-gateway</module>
 	</modules>
 	<properties>
