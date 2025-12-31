@@ -46,3 +46,7 @@ spring:
         uri: lb://bluesky-web-swagger-ui-service
         predicates:
         - Host=swagger.web.bluesky.local
+      - id: bluesky-web-user
+        uri: lb://bluesky-web-user-service
+        predicates:
+        - Host=user.web.bluesky.local
