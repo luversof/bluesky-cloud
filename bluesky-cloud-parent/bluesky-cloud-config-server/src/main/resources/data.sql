@@ -1,4 +1,4 @@
-INSERT INTO spring_config.PROPERTIES (APPLICATION,PROFILE,LABEL,`KEY`,VALUE) VALUES
+INSERT INTO "PROPERTIES" ("APPLICATION","PROFILE","LABEL","KEY","VALUE") VALUES
 	 ('application',NULL,'master','spring.jpa.database','mysql'),
 	 ('application',NULL,'master','spring.jpa.show-sql','true'),
 	 ('application',NULL,'master','spring.jpa.database-platform','org.hibernate.dialect.MariaDBDialect'),
