@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableConfigServer
 @SpringBootApplication
 public class Application {
-	
-	@RestController
-	public static class IndexController {
-		@GetMapping("/")
-		public String index() {
-			return "configServer";
-		}
-	}
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    @RestController
+    public static class IndexController {
+        @GetMapping("/")
+        public String index() {
+            return "configServer";
+        }
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 }

@@ -9,13 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/_check")
 public class DevCheckController {
-	
-	@Autowired
-	private DiscoveryClient discoveryClient;
-	
-	@GetMapping("/discoveryClient")
-	public DiscoveryClient discoveryClient() {
-		return discoveryClient;
-	}
 
+    @Autowired private DiscoveryClient discoveryClient;
+
+    @GetMapping("/discoveryClient")
+    public DiscoveryClient discoveryClient() {
+        return discoveryClient;
+    }
 }
