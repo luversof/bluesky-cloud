@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>io.github.luversof</groupId>
@@ -21,21 +23,21 @@
 			<artifactId>spring-cloud-starter-kubernetes-client-all</artifactId>
 		</dependency>
 		<!-- (e) spring-cloud -->
-		
+
 		<!-- (s) spring-boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<!-- (e) spring-boot -->
-		
+
 		<!-- (s) spring-boot-admin -->
 		<dependency>
 			<groupId>de.codecentric</groupId>
 			<artifactId>spring-boot-admin-starter-client</artifactId>
 		</dependency>
 		<!-- (e) spring-boot-admin -->
-		
+
 		<!-- (s) jdbc -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -53,7 +55,7 @@
 			<artifactId>micrometer-registry-prometheus</artifactId>
 		</dependency>
 		<!-- (e) micrometer metrics -->
-		
+
 		<!-- (s) micrometer traces -->
 		<dependency>
 			<groupId>io.micrometer</groupId>
@@ -79,8 +81,8 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	
+
+
 	<profiles>
 		<profile>
 			<id>nexus-k8s</id>
