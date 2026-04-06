@@ -29,6 +29,13 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- (e) spring-boot -->
+		
+		<!-- (s) spring-boot-admin -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+		</dependency>
+		<!-- (e) spring-boot-admin -->
 
 		<!-- (s) micrometer metrics -->
 		<dependency>

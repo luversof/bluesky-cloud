@@ -29,6 +29,13 @@
 		</dependency>
 		<!-- (e) spring-boot -->
 		
+		<!-- (s) spring-boot-admin -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+		</dependency>
+		<!-- (e) spring-boot-admin -->
+		
 		<!-- (s) jdbc -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,7 +45,7 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 		</dependency>
-		<!-- (s) jdbc -->
+		<!-- (e) jdbc -->
 
 		<!-- (s) micrometer metrics -->
 		<dependency>
