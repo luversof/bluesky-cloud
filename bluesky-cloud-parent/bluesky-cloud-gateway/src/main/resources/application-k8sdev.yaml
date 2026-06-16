@@ -1,6 +1,11 @@
 spring:
   cloud:
     gateway:
+      # Spring Cloud 2025부터 Forwarded/X-Forwarded 헤더 필터는 trusted-proxies가 설정돼야 동작한다.
+      # 미설정 시 게이트웨이가 X-Forwarded-Host를 추가하지 않아, 다운스트림(web-user)의 OAuth2
+      # redirect_uri가 외부 도메인 대신 내부 서비스명(svc.cluster.local)으로 생성된다.
+      # 값은 게이트웨이로 접속하는 직전 프록시(Traefik 등) IP 대역에 맞게 조정할 것.
+      server.webflux.trusted-proxies: "10\\..*"
       server.webflux.routes:
       - id: bluesky-api-blog
         uri: lb://bluesky-api-blog-service
