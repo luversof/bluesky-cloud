@@ -14,6 +14,10 @@ spring:
         uri: https://bookkeeping.api.bluesky.local
         predicates:
         - Host=bookkeeping.api.bluesky.local
+      - id: bluesky-api-poe
+        uri: https://poe.api.bluesky.local
+        predicates:
+        - Host=poe.api.bluesky.local
       - id: bluesky-api-stock
         uri: https://stock.api.bluesky.local
         predicates:
