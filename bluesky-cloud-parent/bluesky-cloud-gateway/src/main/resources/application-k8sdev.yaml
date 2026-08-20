@@ -6,6 +6,14 @@ spring:
       # redirect_uri가 외부 도메인 대신 내부 서비스명(svc.cluster.local)으로 생성된다.
       # 값은 게이트웨이로 접속하는 직전 프록시(Traefik 등) IP 대역에 맞게 조정할 것.
       server.webflux.trusted-proxies: "10\\..*"
+      # 다운스트림에 원본 Host(admin.cloud.bluesky.local 등)를 그대로 전달한다.
+      # 미설정 시 Host 가 lb 대상인 내부 서비스명(svc.cluster.local)으로 바뀐다.
+      # Spring Boot Admin UI 는 이 Host 로 <base href> 를 만들기 때문에, 브라우저가
+      # 내부 DNS 를 못 찾아 자산을 전혀 못 받고 빈 화면이 된다.
+      # (X-Forwarded-Host 는 trusted-proxies 덕에 정상 전달되지만, 그것만으로는
+      #  이 증상이 해결되지 않아 Host 자체를 보존해야 했다)
+      server.webflux.default-filters:
+      - PreserveHostHeader
       server.webflux.routes:
       - id: bluesky-api-blog
         uri: lb://bluesky-api-blog-service
