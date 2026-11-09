@@ -237,3 +237,7 @@ buildNumber.properties
 # End of https://www.toptal.com/developers/gitignore/api/git,java,maven,eclipse,intellij+all,visualstudiocode
 
 logs/
+
+# Claude Code 관련 파일 및 디렉토리
+.claude/
+claude_session/
