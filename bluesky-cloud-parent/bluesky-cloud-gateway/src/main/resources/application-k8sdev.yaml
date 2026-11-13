@@ -55,6 +55,10 @@ spring:
         uri: lb://bluesky-cloud-netflix-eureka-server-2-service
         predicates:
         - Host=eureka2.cloud.bluesky.local
+      - id: bluesky-web-dynamiccrud
+        uri: lb://bluesky-web-dynamiccrud-service
+        predicates:
+        - Host=dynamiccrud.web.bluesky.local
       - id: bluesky-web-gate
         uri: lb://bluesky-web-gate-service
         predicates:
