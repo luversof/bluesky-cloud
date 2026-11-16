@@ -85,7 +85,7 @@
 
 	<profiles>
 		<profile>
-			<id>nexus-k8s</id>
+			<id>k8s-ci</id>
 			<build>
 				<plugins>
 					<plugin>
