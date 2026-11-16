@@ -46,7 +46,7 @@ spring:
         uri: https://gate.web.bluesky.local
         predicates:
         - Host=gate.web.bluesky.local
-      - id: bluesky-web-swagger-ui
-        uri: https://swagger.web.bluesky.local
+      - id: bluesky-web-apidocs
+        uri: https://apidocs.web.bluesky.local
         predicates:
-        - Host=swagger.web.bluesky.local
+        - Host=apidocs.web.bluesky.local

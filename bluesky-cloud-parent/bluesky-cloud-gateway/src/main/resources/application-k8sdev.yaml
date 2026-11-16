@@ -63,10 +63,10 @@ spring:
         uri: lb://bluesky-web-gate-service
         predicates:
         - Host=gate.web.bluesky.local
-      - id: bluesky-web-swagger-ui
-        uri: lb://bluesky-web-swagger-ui-service
+      - id: bluesky-web-apidocs
+        uri: lb://bluesky-web-apidocs-service
         predicates:
-        - Host=swagger.web.bluesky.local
+        - Host=apidocs.web.bluesky.local
       - id: bluesky-web-user
         uri: lb://bluesky-web-user-service
         predicates:
