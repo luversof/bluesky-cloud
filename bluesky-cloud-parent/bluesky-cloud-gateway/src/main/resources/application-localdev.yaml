@@ -50,3 +50,11 @@ spring:
         uri: https://apidocs.web.bluesky.local
         predicates:
         - Host=apidocs.web.bluesky.local
+      - id: bluesky-web-dynamiccrud2
+        uri: https://dynamiccrud2.web.bluesky.local
+        predicates:
+        - Host=dynamiccrud2.web.bluesky.local
+      - id: bluesky-web-user
+        uri: https://user.web.bluesky.local
+        predicates:
+        - Host=user.web.bluesky.local

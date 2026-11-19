@@ -28,9 +28,6 @@ bluesky-cloud/
 │   ├── bluesky-cloud-netflix-eureka-server/  # Service Registry
 │   ├── bluesky-cloud-gateway/            # API Gateway
 │   └── bluesky-cloud-admin-server/       # Admin Server
-├── docker-compose.yml                    # Docker 구성
-├── kubernetes-*.yaml                     # Kubernetes 배포 설정
-└── Dockerfile                            # 컨테이너 이미지
 ```
 
 ## 주요 서비스
@@ -149,8 +146,7 @@ spring.config.import=https://raw.githubusercontent.com/luversof/bluesky-config-r
 
 ### Local Development
 
-- Docker Compose 사용
-- `docker-compose.yml` 참고
+- 작업 중인 모듈만 로컬에서 실행하고 나머지는 k8s 사용 (`localdev` 프로필)
 
 ### Kubernetes
 
@@ -158,11 +154,7 @@ spring.config.import=https://raw.githubusercontent.com/luversof/bluesky-config-r
 - Namespace: 각 서비스별 분리
 - Ingress: Traefik 사용
 
-**배포 파일**:
-
-- `kubernetes-bluesky-cloud-config-server.yaml`
-- `kubernetes-bluesky-cloud-netflix-eureka-server.yaml`
-- `kubernetes-bluesky-cloud-admin-server.yaml`
+**배포 파일**: jib으로 이미지를 빌드하고, 배포 설정은 `bluesky-argocd-applications` 저장소에 있음
 
 ## 모니터링
 
