@@ -36,7 +36,7 @@
 			<repositories>
 				<repository>
 					<id>reposilite-public</id>
-					<url>http://reposilite.bluesky.local/public/</url>
+					<url>https://reposilite.bluesky.local/public/</url>
 					<releases>
 						<enabled>true</enabled>
 					</releases>
@@ -49,11 +49,11 @@
 			<distributionManagement>
 				<repository>
 					<id>reposilite-releases</id>
-					<url>http://reposilite.bluesky.local/releases/</url>
+					<url>https://reposilite.bluesky.local/releases/</url>
 				</repository>
 				<snapshotRepository>
 					<id>reposilite-snapshots</id>
-					<url>http://reposilite.bluesky.local/snapshots/</url>
+					<url>https://reposilite.bluesky.local/snapshots/</url>
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
@@ -123,7 +123,7 @@
 		</repository>
 		<repository>
 			<id>reposilite-snapshots</id>
-			<url>http://reposilite.bluesky.local/snapshots/</url>
+			<url>https://reposilite.bluesky.local/snapshots/</url>
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
