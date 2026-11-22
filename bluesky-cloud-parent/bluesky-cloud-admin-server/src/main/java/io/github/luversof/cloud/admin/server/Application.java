@@ -1,16 +1,12 @@
 package io.github.luversof.cloud.admin.server;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 
-@Configuration
-@EnableAutoConfiguration
+@SpringBootApplication
 @EnableAdminServer
-@EnableScheduling
 public class Application {
 
   public static void main(String[] args) {

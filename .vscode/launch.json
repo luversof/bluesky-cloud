@@ -6,7 +6,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
-      "mainClass": "net.luversof.cloud.config.server.Application",
+      "mainClass": "io.github.luversof.cloud.config.server.Application",
       "projectName": "bluesky-cloud-config-server",
       "args": ""
     },
@@ -16,7 +16,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
-      "mainClass": "net.luversof.cloud.netflix.eureka.server.Application",
+      "mainClass": "io.github.luversof.cloud.netflix.eureka.server.Application",
       "projectName": "bluesky-cloud-netflix-eureka-server",
       "args": ""
     }
