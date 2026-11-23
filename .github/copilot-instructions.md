@@ -132,6 +132,7 @@ spring.cloud.config.server.jdbc.sql=SELECT `KEY`, `VALUE` from PROPERTIES where 
 
 **주요 파일**:
 
+- `bootstrap_v4.2.yml`: Spring Boot 4.2+ 설정
 - `bootstrap_v2.4.yml`: Spring Boot 2.4+ 설정
 - `bootstrap.yml`: 기본 설정
 - `test.properties`: 테스트 설정
@@ -139,7 +140,7 @@ spring.cloud.config.server.jdbc.sql=SELECT `KEY`, `VALUE` from PROPERTIES where 
 **사용 방법**:
 
 ```properties
-spring.config.import=https://raw.githubusercontent.com/luversof/bluesky-config-repo/develop/bootstrap_v2.4.yml
+spring.config.import=https://raw.githubusercontent.com/luversof/bluesky-config-repo/develop/bootstrap_v4.2.yml
 ```
 
 ## 배포 환경
